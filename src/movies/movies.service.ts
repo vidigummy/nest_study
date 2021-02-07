@@ -5,7 +5,7 @@ import {Movie} from './entities/movie.entity';
 
 @Injectable()
 export class MoviesService {
-    private movies = [];
+    private movies: Movie[] = [];
 
     getAll(): Movie[]{
         return this.movies;
